@@ -142,4 +142,46 @@ Uses professional yet accessible language
 
 Keeps descriptions concise while comprehensive
 
-# The structure flows naturally from strategic roles (Product Leadership) through execution (Development) to quality control and operations. Each role's description focuses on its unique value to the project while showing how it fits into the larger team ecosystem.
+##  Technology Stack
+# Backend
+Django: High-level Python web framework for building secure, scalable RESTful APIs and backend logic
+
+Django REST Framework: Toolkit for building Web APIs on top of Django, enabling rapid API development
+
+PostgreSQL: Relational database system for structured data storage of properties, users, and bookings
+
+GraphQL: Query language for APIs to provide efficient data fetching for complex relational data
+
+# Frontend
+React: JavaScript library for building interactive user interfaces and single-page applications
+
+Redux: State management library for maintaining application state across components
+
+Tailwind CSS: Utility-first CSS framework for rapidly building custom UI designs
+
+Apollo Client: GraphQL client for managing data flow between React components and the GraphQL API
+
+# DevOps & Infrastructure
+Docker: Containerization platform for consistent development and deployment environments
+
+Nginx: Web server for reverse proxying and serving static files
+
+AWS Elastic Beanstalk: Platform-as-a-Service for deploying and scaling the web application
+
+GitHub Actions: CI/CD service for automated testing and deployment workflows
+
+# Authentication & Services
+JWT (JSON Web Tokens): Secure token-based authentication system for user sessions
+
+OAuth 2.0: Authorization framework for third-party login integrations (Google, Facebook)
+
+Stripe API: Payment processing system for handling booking transactions
+
+Implementation Notes:
+Format: Clear category headings with bullet points
+
+Structure: Grouped by functional area (Backend/Frontend/DevOps)
+
+Descriptions: Each technology has a concise purpose statement showing its project role
+
+Relevance: All technologies directly support Airbnb-like functionality (bookings, listings, auth)
