@@ -260,3 +260,65 @@ booking_id (FK)	UUID	References Bookings.id
 Relationships:
 
 ➔ For 1:1 Booking (Payment ↔ Booking)
+
+## Feature Breack down
+Core Functional Modules
+1. Identity and Access Management (IAM)
+Scope: End-to-end user lifecycle management including registration, authentication (JWT/OAuth 2.0), and role-based access control (RBAC)
+
+Business Logic: Implements dual user roles (host/guest) with distinct permission sets and profile management interfaces
+
+Technical Components: Secure password hashing (bcrypt), session management, and email verification workflows
+
+2. Property Listing Management
+Data Model: CRUD operations for property entities with nested amenities and availability calendars
+
+Media Handling: Supports high-resolution image uploads with CDN integration and thumbnail generation
+
+Validation: Implements business rules for listing completeness before publication
+
+3. Booking and Reservation Engine
+Core Algorithm: Real-time availability checking with conflict resolution for overlapping reservations
+
+Pricing System: Dynamic price calculations incorporating seasonal rates and minimum stay requirements
+
+State Machine: Manages booking lifecycle from pending → confirmed → completed → cancelled
+
+4. Review and Reputation System
+Rating Framework: Weighted average calculation with safeguards against spam/fraud
+
+Moderation: Automated content filtering and manual reporting workflows
+
+Display Logic: Paginated results with sorting by date/rating relevance
+
+5. Search and Discovery Service
+Indexing: Implements Elasticsearch for full-text and geo-spatial queries
+
+Filter Pipeline: Composable filter criteria with performance-optimized database queries
+
+Ranking: Personalized results based on user preferences and historical behavior
+
+6. Payment Processing Gateway
+Integration: PCI-DSS compliant Stripe API implementation for global payments
+
+Transaction Flow: Supports authorization → capture → refund workflows with audit logging
+
+Payout System: Scheduled host payments with fee calculations and tax documentation
+
+7. Real-time Messaging
+Architecture: WebSocket-based bidirectional communication with message persistence
+
+Notification System: Email and mobile push notification integrations
+
+Anti-Abuse: Rate limiting and content moderation tools
+
+Technical Characteristics
+Idempotency: Critical operations implement idempotency keys for reliability
+
+Observability: All features instrumented with metrics/logs/tracing
+
+Resilience: Circuit breakers and retry logic for external dependencies
+
+Performance: Benchmark targets for 95th percentile response times
+
+Security: OWASP Top 10 protections implemented at each layer
