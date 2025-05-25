@@ -13,7 +13,7 @@ This project is a clone of Airbnb, aiming to replicate its core features like pr
 - Learn modern full-stack development practices.  
 
 
-## Team Structure & Responsibilities
+## Team Roles
 # Product Leadership
 # Business Analyst (BA)
 
