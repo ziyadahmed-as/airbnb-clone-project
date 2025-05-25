@@ -416,3 +416,49 @@ DOM purification
 
 Parameterized queries
 
+# CI/CD Pipeline
+
+Overview
+Continuous Integration and Continuous Deployment (CI/CD) pipelines automate the software delivery process, enabling frequent, reliable code releases. For this project, CI/CD ensures:
+
+Rapid iteration through automated testing and builds
+
+Consistent deployments with environment parity
+
+Early bug detection via integrated quality gates
+
+Implementation
+The pipeline will leverage:
+
+GitHub Actions: For workflow automation (build, test, deploy)
+
+Docker: Containerization to ensure consistent runtime environments
+
+AWS CodeDeploy/Elastic Beanstalk: For zero-downtime deployments
+
+SonarCloud: Integrated static code analysis
+
+Key Stages
+Continuous Integration
+
+Trigger: On every git push
+
+Steps:
+
+Linting (ESLint/Flake8)
+
+Unit/integration testing (Jest/pytest)
+
+Container build and registry push
+
+Continuous Deployment
+
+Trigger: On merge to main
+
+Steps:
+
+Infrastructure provisioning (Terraform)
+
+Canary deployment to staging
+
+Smoke tests and auto-rollback on failure
