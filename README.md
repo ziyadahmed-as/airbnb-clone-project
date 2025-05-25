@@ -261,7 +261,7 @@ Relationships:
 
 ➔ For 1:1 Booking (Payment ↔ Booking)
 
-## Feature Breack down
+## Feature Breakdown
 Core Functional Modules
 1. Identity and Access Management (IAM)
 Scope: End-to-end user lifecycle management including registration, authentication (JWT/OAuth 2.0), and role-based access control (RBAC)
