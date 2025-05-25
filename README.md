@@ -185,3 +185,78 @@ Structure: Grouped by functional area (Backend/Frontend/DevOps)
 Descriptions: Each technology has a concise purpose statement showing its project role
 
 Relevance: All technologies directly support Airbnb-like functionality (bookings, listings, auth)
+
+##  Database Design
+# Entity-Relationship Model
+1. Users Entity
+Field	Type	Description
+id (PK)	UUID	Unique user identifier
+email	VARCHAR(255)	User's login credential
+password_hash	VARCHAR(255)	Encrypted authentication token
+first_name	VARCHAR(100)	
+last_name	VARCHAR(100)	
+role	ENUM	host or guest
+Relationships:
+
+➔ Hosts 1:M Properties (User → Properties)
+
+➔ Makes 1:M Bookings (User → Bookings)
+
+➔ Writes 1:M Reviews (User → Reviews)
+
+2. Properties Entity
+Field	Type	Description
+id (PK)	UUID	
+title	VARCHAR(255)	Property listing title
+description	TEXT	Detailed property information
+price_per_night	DECIMAL(10,2)	
+location	GEOGRAPHY	Coordinates + address
+host_id (FK)	UUID	References Users.id
+Relationships:
+
+➔ Belongs to M:1 Users (Properties → User)
+
+➔ Has 1:M Bookings (Property → Bookings)
+
+➔ Receives 1:M Reviews (Property → Reviews)
+
+3. Bookings Entity
+Field	Type	Description
+id (PK)	UUID	
+start_date	DATE	
+end_date	DATE	
+total_price	DECIMAL(10,2)	Calculated from property price
+guest_id (FK)	UUID	References Users.id
+property_id (FK)	UUID	References Properties.id
+Relationships:
+
+➔ Made by M:1 Users (Bookings → User)
+
+➔ References M:1 Properties (Bookings → Property)
+
+➔ Processes 1:1 Payment (Booking ↔ Payment)
+
+4. Reviews Entity
+Field	Type	Description
+id (PK)	UUID	
+rating	SMALLINT	1-5 scale
+comment	TEXT	
+created_at	TIMESTAMP	Auto-generated
+author_id (FK)	UUID	References Users.id
+property_id (FK)	UUID	References Properties.id
+Relationships:
+
+➔ Written by M:1 Users (Reviews → User)
+
+➔ About M:1 Properties (Reviews → Property)
+
+5. Payments Entity
+Field	Type	Description
+id (PK)	UUID	
+amount	DECIMAL(10,2)	
+status	ENUM	pending/completed/refunded
+payment_method	VARCHAR(50)	credit_card/paypal/etc
+booking_id (FK)	UUID	References Bookings.id
+Relationships:
+
+➔ For 1:1 Booking (Payment ↔ Booking)
