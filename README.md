@@ -262,7 +262,7 @@ Relationships:
 ➔ For 1:1 Booking (Payment ↔ Booking)
 
 ## Feature Breakdown
-Core Functional Modules
+# Core Functional Modules
 1. Identity and Access Management (IAM)
 Scope: End-to-end user lifecycle management including registration, authentication (JWT/OAuth 2.0), and role-based access control (RBAC)
 
@@ -322,3 +322,97 @@ Resilience: Circuit breakers and retry logic for external dependencies
 Performance: Benchmark targets for 95th percentile response times
 
 Security: OWASP Top 10 protections implemented at each layer
+
+# API Security
+# Security Framework Implementation
+1. Authentication 
+Standard: OAuth 2.0 with OpenID Connect
+
+Implementation:
+
+JWT-based stateless authentication
+
+Short-lived access tokens (15min expiry)
+
+Secure refresh token rotation
+
+Hardware security module (HSM) for signing keys
+
+Compliance: RFC 6749, RFC 7519
+
+Threat Mitigation:
+
+Prevents credential stuffing attacks
+
+Eliminates session fixation vulnerabilities
+
+Protects against token replay attacks
+
+2. Authorization 
+Model: Attribute-Based Access Control (ABAC)
+
+Components:
+
+Policy Decision Point (PDP) for real-time authorization
+
+Policy Administration Point (PAP) for rule management
+
+Policy Information Point (PIP) for attribute retrieval
+
+Enforcement:
+
+Fine-grained resource access controls
+
+Tenant isolation in multi-tenant architecture
+
+Dynamic permission escalation checks
+
+3. Rate Limiting & Throttling
+Architecture:
+
+Distributed rate limiting using Redis
+
+Adaptive throttling based on threat scoring
+
+IP reputation integration
+
+Thresholds:
+
+1000 requests/min (normal)
+
+100 requests/min (auth endpoints)
+
+20 requests/min (suspicious)
+
+4. Data Protection
+Encryption:
+
+TLS 1.3 for in-transit
+
+AES-256-GCM for at-rest
+
+Format-preserving encryption for PII
+
+Payment Security:
+
+PCI DSS Level 1 compliance
+
+Tokenization via certified provider
+
+Dual control for sensitive operations
+
+5. Input Security
+Validation:
+
+JSON Schema validation
+
+Content Security Policy (CSP)
+
+Strict Content-Type headers
+
+Sanitization:
+
+DOM purification
+
+Parameterized queries
+
