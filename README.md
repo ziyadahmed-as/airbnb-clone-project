@@ -34,3 +34,36 @@ High-Quality Media Gallery: Image carousels and, if possible, 360° tours for de
 Clear Pricing Breakdown: Transparent display of all costs (nightly rate, cleaning fee, service fee, taxes) before the user commits to booking.
 Streamlined Booking Flow: A minimal, step-by-step checkout process to reduce abandonment rates.
 
+
+## Design System & Properties (Based on Figma Mockup)
+To ensure visual consistency and development efficiency, the following design properties have been identified from the project's Figma mockup.
+
+### Color Styles
+The color palette is designed to create a clean, trustworthy, and engaging interface.
+Primary: #FF5A5F (Airbnb's signature red, used for primary buttons, icons, and key accents)
+Secondary: #00A699 (A complementary green, often used for positive actions or highlights)
+Typography (Headings & Body): #484848 (Near-black for high readability)
+Typography (Secondary/Light): #767676 (Medium gray for less important text)
+Background & Borders: #FFFFFF (White), #EBEBEB (Light gray for borders and dividers)
+Hover States: #F7F7F7 (Very light gray for interactive element hover states)
+
+### Typography
+A clean and modern font stack ensures readability across devices.
+Font Family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif
+
+### Font Weights & Sizes:
+Page Headers (H1): 32px, Semibold (600)
+Section Headers (H2): 24px, Semibold (600)
+Subheaders (H3): 18px, Semibold (600)
+Body Copy / Paragraph: 16px, Regular (400)
+Caption / Secondary Text: 14px, Regular (400)
+Button Text: 16px, Semibold (600)
+
+### The Importance of Identifying Design Properties
+Identifying and documenting design properties like color styles and typography is a foundational step in the UI/UX process. It is crucial for:
+-- Consistency: It creates a single source of truth for the entire team (designers and developers), ensuring that every component and page looks and feels cohesive, which is vital for building a professional and trustworthy brand identity.
+-- Efficiency & Scalability: Developers can translate these defined properties directly into theme variables (e.g., in Tailwind CSS or CSS custom properties). This allows for rapid development, easy maintenance, and simple future updates. Changing a primary color in one variable updates it across the entire application.
+
+-- Collaboration: It bridges the gap between design and development. A well-documented design system reduces ambiguity, prevents repetitive questions, and streamlines the handoff process, allowing both teams to work from the same blueprint.
+
+-- Accessibility: Documenting properties forces a conscious decision about color contrast ratios and font sizes, ensuring the final product is usable and accessible to everyone.
