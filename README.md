@@ -67,3 +67,25 @@ Identifying and documenting design properties like color styles and typography i
 -- Collaboration: It bridges the gap between design and development. A well-documented design system reduces ambiguity, prevents repetitive questions, and streamlines the handoff process, allowing both teams to work from the same blueprint.
 
 -- Accessibility: Documenting properties forces a conscious decision about color contrast ratios and font sizes, ensuring the final product is usable and accessible to everyone.
+
+
+
+# Project Roles and Responsibilities
+A clear definition of roles and responsibilities is crucial for the success of a collaborative project like the Airbnb Clone. This ensures accountability, streamlines workflows, and ensures all critical areas of development are covered.
+
+## Role	Key Responsibilities	Contribution to Project Success
+Project Manager	Defines project scope and timeline. Creates and manages the project roadmap. Facilitates communication between all team members. Identifies and mitigates risks. Tracks progress against milestones.	Ensures the project is delivered on time and meets its defined goals. Keeps the team aligned, focused, and unblocked.
+#### Product Owner	Defines and prioritizes the product backlog. Articulates user stories and acceptance criteria. Represents the voice of the customer and stakeholders. Validates that features meet business requirements.	Ensures the team is building the right product by maximizing the value of the work delivered. Bridges the gap between the vision and the development team.
+
+#### Scrum Master	Facilitates Agile/Scrum ceremonies (daily stand-ups, sprint planning, retrospectives). Removes impediments for the development team. Shields the team from external distractions. Ensures the team follows Agile principles.	Fosters a productive and self-organizing team environment. Promotes continuous improvement and helps the team achieve higher levels of performance.
+
+#### UI/UX Designer	Creates wireframes, mockups, and interactive prototypes. Develops the design system (color palette, typography, components). Conducts user research and usability testing. Ensures a consistent and intuitive user experience.	Creates the visual and experiential blueprint for the application. Directly impacts user satisfaction, engagement, and conversion rates.
+
+#### Frontend Developer	Implements the user interface using React.js and Tailwind CSS. Creates reusable components. Integrates with backend APIs. Ensures the application is responsive and performs well across browsers.	Responsible for everything the user interacts with directly. Their work directly shapes the user's perception of the application's quality and speed.
+
+#### Backend Developer	Designs and develops the Django REST Framework API. Implements business logic, authentication, and authorization. Designs database schemas and writes optimized queries. Ensures data integrity and security.	Builds the core engine and logic of the application. Responsible for the reliability, security, and performance of the server, database, and application programming interfaces (APIs).
+
+#### QA/Testers	Creates and executes test plans (manual and automated). Identifies, documents, and tracks bugs. Performs regression testing. Ensures the product meets quality standards before release.	Acts as the gatekeeper for quality. Ensures a stable, bug-free user experience and protects the product's reputation by preventing faulty releases.
+
+#### DevOps Engineer	Sets up and maintains the CI/CD pipeline using GitHub Actions. Manages containerization with Docker. Configures deployment environments (staging, production). Monitors application performance and uptime.	Automates the deployment process, enabling frequent and reliable releases. Ensures the infrastructure is scalable, secure, and highly available.
+
