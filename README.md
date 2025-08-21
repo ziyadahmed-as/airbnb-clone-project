@@ -89,3 +89,51 @@ Project Manager	Defines project scope and timeline. Creates and manages the proj
 
 #### DevOps Engineer	Sets up and maintains the CI/CD pipeline using GitHub Actions. Manages containerization with Docker. Configures deployment environments (staging, production). Monitors application performance and uptime.	Automates the deployment process, enabling frequent and reliable releases. Ensures the infrastructure is scalable, secure, and highly available.
 
+
+## UI Component Patterns
+
+This section outlines the reusable UI components planned for the Airbnb Clone project. Each component will follow a consistent design system to ensure scalability, maintainability, and a seamless user experience across the application.
+
+### Planned Components
+
+- **Navbar**
+  - Contains logo, search bar, navigation links, and user menu.
+  - Responsive design with a collapsible menu for mobile devices.
+  - Provides global access to search, login/signup, and user dashboard.
+
+- **Property Card**
+  - Displays property image, title, price per night, and rating.
+  - Includes a quick action (e.g., "Favorite" ♥).
+  - Clickable, leading to the detailed listing view.
+  - Designed for use in grids and lists with responsiveness in mind.
+
+- **Footer**
+  - Contains links to About, Contact, Terms & Policies, and Social Media.
+  - Displays copyright.
+  - Responsive layout for different screen sizes.
+
+- **Search Bar**
+  - Allows users to input location, dates, and number of guests.
+  - Integrated with filters and auto-suggestions.
+  - Designed for both header (global search) and page-level use.
+
+- **Booking Widget**
+  - Sticky component on the property detail page.
+  - Includes date picker, guest selector, price calculation, and "Reserve" button.
+  - Validates availability and provides real-time feedback.
+
+- **Image Carousel**
+  - Showcases property images in a gallery format.
+  - Supports swipe gestures on mobile devices.
+  - Includes thumbnails and navigation arrows.
+
+- **Review Component**
+  - Displays guest reviews with rating breakdowns.
+  - Supports pagination or "load more" functionality.
+  - Consistent card-style layout with reviewer details.
+
+### Component Design Principles
+- **Reusability:** Components will be modular and reusable across different pages.  
+- **Accessibility:** Each component will follow accessibility guidelines (ARIA labels, keyboard navigation).  
+- **Responsiveness:** Components will adapt to various screen sizes.  
+- **Consistency:** Typography, spacing, and color schemes will remain uniform across components.  
