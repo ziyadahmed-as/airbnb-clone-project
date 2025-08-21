@@ -1,101 +1,25 @@
-# Airbnb Clone Project  
+# Airbnb Clone Project
+## 1, Project Overview
+The Airbnb Clone Project is a comprehensive web application that replicates the core functionality of Airbnb, enabling users to explore property listings, examine detailed information, and complete a streamlined booking process. This initiative serves as an advanced full-stack development exercise focused on creating a scalable, responsive, and user-centric accommodation booking platform.
 
-## Project Overview  
-This project is a clone of Airbnb, aiming to replicate its core features like property listings, bookings, and user reviews.  
+## 2 Project Objectives
+Practical Skill Development: Implement full-stack development methodologies through hands-on application in a production-like environment
 
-## Tech Stack  
-- **Frontend:** HTML, CSS, JavaScript  
-- **Backend:** Python  
-- **Database:** (To be decided)  
+Enhanced User Experience: Design and develop an intuitive interface that optimizes the property discovery and reservation workflow
 
-## Goals  
-- Build a functional MVP with key Airbnb features.  
-- Learn modern full-stack development practices.  
+Architectural Scalability: Construct a modular system architecture to facilitate future feature expansion and performance optimization
 
+Industry Standards Compliance: Adhere to software development best practices including clean code principles, version control protocols, and collaborative development workflows
 
-## Team Roles
-# Product Leadership
-# Business Analyst (BA)
+## 3, Technology Stack
+### Frontend: 
+React.js with Tailwind CSS for building modern, responsive user interfaces
 
-Analyzes business processes and stakeholder needs
+### Backend: 
+Django REST Framework for robust API development and business logic implementation
+Database: PostgreSQL for reliable, scalable data management and storage solutions
+Authentication: JSON Web Tokens (JWT) for secure user authentication and authorization
+Performance Optimization (Planned): Redis integration for caching frequently accessed data
 
-Translates business objectives into technical requirements
-
-Bridges communication between stakeholders and development teams
-
-Manages requirement documentation and validation
-
-# Product Owner (PO)
-
-Defines and communicates product vision
-
-Prioritizes features and manages product backlog
-
-Ensures final product delivers business value
-
-Makes strategic decisions balancing business and technical needs
-
-# Project Management
-# Project Manager (PM)
-
-Oversees project timelines and resource allocation
-
-Facilitates cross-team collaboration
-
-Implements Agile/Scrum methodologies
-
-Manages risk and ensures project deliverables
-
-# Design & Architecture
-# UI/UX Designer
-
-Conducts user research and creates personas
-
-Designs intuitive user interfaces and experiences
-
-Develops wireframes, prototypes, and design systems
-
-Ensures accessibility and cross-platform consistency
-
-# Software Architect
-
-Designs high-level system architecture
-
-Selects appropriate technologies and frameworks
-
-Establishes coding standards and best practices
-
-Oversees system integration and scalability
-
-# Development Team
-# Frontend Developer
-
-Implements responsive UI components
-
-Ensures optimal client-side performance
-
-Integrates with backend APIs
-
-Maintains cross-browser compatibility
-
-# Backend Developer
-
-Develops core application logic and APIs
-
-Implements security and authentication systems
-
-Optimizes database interactions
-
-Maintains server infrastructure
-
-# Full-Stack Developer
-
-Handles both frontend and backend development
-
-Ensures seamless system integration
-
-Troubleshoots cross-system issues
-
-# Quality Assurance
-# QA Engineer
+Deployment Infrastructure: Docker containerization with GitHub Actions for continuous integration and deployment pipelines
 
